@@ -1,7 +1,7 @@
 {
   "name": "array-xor",
   "description": "Returns the symmetric difference (exclusive-or) of an array of elements (elements that are present in all given arrays and not in their intersections).",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/jonschlinkert/array-xor",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/array-xor",
@@ -21,8 +21,7 @@
   },
   "dependencies": {
     "arr-diff": "^1.1.0",
-    "array-unique": "^0.2.1",
-    "lazy-cache": "^0.2.3"
+    "array-unique": "^0.2.1"
   },
   "devDependencies": {
     "mocha": "*"
