@@ -7,13 +7,11 @@
 
 'use strict';
 
-var lazy = require('lazy-cache')(require);
-lazy('arr-diff', 'diff');
-lazy('array-unique', 'unique');
+var uniq = require('array-unique');
+var diff = require('arr-diff');
 
 function xor() {
   var len = arguments.length;
-  var diff = lazy.diff;
   var i = -1, res;
 
   while (++i < len) {
@@ -26,7 +24,7 @@ function xor() {
       }
     }
   }
-  return res ? lazy.unique(res) : [];
+  return res ? uniq(res) : [];
 }
 
 /**
